@@ -26,6 +26,10 @@
 
 % add new packages here
 
+% Biblatex to help with citations. This is my own addition, not sure if the style is correct
+\usepackage[maxbibnames=99, sorting=none]{biblatex}
+\addbibresource{bib/MyMScTUDENSThesisBibFile.bib}
+
 % math packages
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -38,8 +42,8 @@
 
 % Graphics: different for pdflatex or dvi output, choose one
 %%\usepackage[dvips]{graphicx}
-%%\usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+% \usepackage{graphicx}
 
 \usepackage{epstopdf}
 \usepackage{rotating}
@@ -175,8 +179,9 @@ PUT THE NAME AND SURNAME OF GRADUATION COMMITTEE MEMBER X HERE & Delft Universit
 \include{chapters/futurework}
 
 % Create bibliography
-\bibliographystyle{plain} % Please do not change the style of bibliography (yes, it should be `plain`)
-\bibliography{../bib/MyMScTUDENSThesisBibFile}
+% \bibliographystyle{plain} % Please do not change the style of bibliography (yes, it should be `plain`)
+% \bibliography{../bib/MyMScTUDENSThesisBibFile}
+\printbibliography
 
 % Create appendix
 \appendix
